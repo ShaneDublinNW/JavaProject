@@ -6,8 +6,8 @@ tomcat
 
 #
 # Default excludes
-#bin/
-
+#
+bin/
 # Binaries
 *.7z
 *.dmg

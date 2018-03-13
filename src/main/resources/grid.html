@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Grid stuff</title>
+
+<style>
+body {
+	margin: 0px;
+	
+}
+
+footer{
+	background-color: #888888;
+	grid-column :1 / span 2;	
+	grid-row: 3 / span 3;
+	padding: 8px;
+	display:grid;
+	
+}
+header{
+	background-color: #999999;
+	grid-column :1 / span 2;
+	grid-row: 1 / span 1;
+	padding: 8px;
+	
+}
+
+li {
+	list-style-type: none;	
+}
+
+
+
+nav {
+	background-color: #bbbbbb;
+	grid-column-start :1 ;
+	grid-row-start:2;
+	padding: 8px;
+	
+}
+
+ul {
+	padding: 0px;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 64px 1fr 64px;
+	height: 100vh;
+	
+	grid-column-gap: 8px;
+	grid-row-gap: 8px;
+	
+}
+.content {
+	background-color: #dddddd;
+	grid-column-start: 2;
+	grid-row-start: 2; 
+	overflow: auto;
+	padding: 8px;
+}
+.sub-grid {
+align-self:center;	
+justify-self:center;	
+}
+</style>
+
+</head>
+<body class="container" >
+
+<header>Awesome header is here</header>
+<nav>
+<ul>
+	<li><a href="#">Site navigation</a></li>
+	<li><a href="#">Site navigation</a></li>
+	<li><a href="#">Site navigation</a></li>
+	<li><a href="#">Site navigation</a></li>
+	<li><a href="#">Site navigation</a></li>
+	<li><a href="#">Site navigation</a></li>
+	<li><a href="#">Site navigation</a></li>
+</ul>
+
+</nav>
+
+<div id='content' class="content" >
+</div>
+
+<footer>
+<span class="sub-grid">
+	Footer is here
+</span>
+</footer>
+<script type="text/javascript" src="lorem.js"></script>
+
+</body>
+</html>

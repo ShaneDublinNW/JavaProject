@@ -1,15 +1,3 @@
-# JavaProject
+# HTML and Java Test code
 
-Learning Git stuffs
-
-Hello test
-
-more testing
-
-##  Wowo
-
-
-test
-origin change
-
-#### This should show up in rocket chat
+This is just a simple git project that I set up where I can test code. 

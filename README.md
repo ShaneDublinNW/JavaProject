@@ -2,6 +2,6 @@
 
 This is just a simple git project that I set up where I can test code. 
 
-##Testing Code Develope
+##Testing Code
 * Test users
 * Test Browsers

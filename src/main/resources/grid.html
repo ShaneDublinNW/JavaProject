@@ -13,7 +13,7 @@ body {
 footer{
 	background-color: #888888;
 	grid-column :1 / span 2;	
-	grid-row: 3 / span 3;
+	grid-row-start: auto;
 	padding: 8px;
 	display:grid;
 	
@@ -47,13 +47,15 @@ ul {
 .container{
 	display: grid;
 	grid-template-columns: auto auto;
-	grid-template-rows: 64px 1fr 64px;
+	grid-template-rows: 64px auto  64px;
 	height: 100vh;
 	
 	grid-column-gap: 8px;
 	grid-row-gap: 8px;
 	
 }
+
+
 .content {
 	background-color: #dddddd;
 	grid-column-start: 2;
@@ -62,9 +64,38 @@ ul {
 	padding: 8px;
 }
 .sub-grid {
-align-self:center;	
-justify-self:center;	
+	align-self:center;	
+	justify-self:center;	
 }
+
+@media screen and (max-width:600px) {
+	.container{
+		display: grid;
+		grid-template-columns: auto ;
+		grid-template-rows: 64px auto auto  64px;
+		height: auto;
+		
+	}
+	footer {
+		grid-column: auto;
+	}
+	header {
+		grid-column: auto;
+	}
+	nav {
+		background-color: #3333ff;
+		grid-column:1 ;
+		grid-row-start:2;
+	}
+	.content {
+		background-color: #dddddd;
+		grid-column-start: 1;
+		grid-row-start: 3;		
+		
+	}
+	
+}
+
 </style>
 
 </head>
